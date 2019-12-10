@@ -34,6 +34,17 @@ h3 {
   padding: 0px !important;
 }
 
+pre {
+  color: #9a9a9a !important;
+  text-align: left;
+  font-family: Verdana !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  padding-top: 5px !important;
+}
+
 p {
   color: black;
   text-align: left;
@@ -95,12 +106,19 @@ section:after {
 }
 
 #myImage {
-  width: 600px;
 }
 
 .row {
   margin: 0px !important;
   display: table;
+}
+
+hr {
+  margin: 0px !important;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .col-left {
@@ -116,30 +134,46 @@ section:after {
 
 .panel-left {
   padding: 16px;
-  padding-bottom: 0px;
+  padding-bottom: 16px;
   text-align: center;
   display: table-cell;
   width: 64px;
 }
 
 .panel-left img {
+  display: inline-block;
+  vertical-align:top;
   width: 32px;
   border-radius: 50%;
 }
 .panel-right {
+  display: inline-block;
+  vertical-align:top;
   padding-top: 16px;
-  padding-bottom: 0px;
+  padding-right: 12px;
   display: table-cell;
   width: 271px;
   position: relative;
 }
+
+.panel-comments {
+  background-color:inherit;
+  display: block;
+  width: 100%;
+}
+
 .panel-buttons {
   background-color: green;
   display: border-box;
   position: absolute;
   bottom: 0;
-  font-size: 50px;
-  color: black;
+}
+
+.col-buttons {
+  width: 100%;
+  background-color: blue;
+  display: none;
+  order: 3;
 }
 
 .container-panel {
@@ -149,6 +183,12 @@ section:after {
   margin-left: auto;
   margin-right: auto;
 }
+
+.panel {
+  margin: 0 auto;
+}
+
+
 
 
 
@@ -164,14 +204,74 @@ section:after {
     margin-bottom: 20px;
   }
 
+  .row {
+    width: 100%;
+  }
+
   .col img {
     width: 293px;
-    padding: 12px 12px;
+    padding: 12px 0px;
+    margin-left: -50px;
+    margin-right: -50px;
   }
 
   .row {
-    margin-left: -20px !important;
-    margin-right: -20px !important;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  hr {
+    display: none !important;
+  }
+
+  .col-left {
+    background-color: white;
+    display: block;
+    text-align: center;
+    order: 2;
+  }
+
+  .col-left img {
+    width: 268px;
+    text-align: center;
+  }
+
+  .col-right {
+    background-color: white;
+    display: block;
+    text-align: center !important;
+    margin: 0 auto !important;
+    width: 100%;
+    order: 1;
+  }
+
+  .panel-buttons {
+    display: none;
+  }
+
+  .panel-comments {
+    display: none;
+  }
+
+  .panel-right {
+    width: 200px;
+  }
+
+  .col-buttons {
+    display: block;
+  }
+
+  .container-panel {
+    position: fixed;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
 }
