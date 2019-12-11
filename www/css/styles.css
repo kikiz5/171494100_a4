@@ -163,7 +163,7 @@ hr {
 }
 
 .panel-buttons {
-  background-color: green;
+  width: 100%;
   display: border-box;
   position: absolute;
   bottom: 0;
@@ -171,9 +171,13 @@ hr {
 
 .col-buttons {
   width: 100%;
-  background-color: blue;
+  background-color: white;
   display: none;
   order: 3;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
 }
 
 .container-panel {
@@ -187,6 +191,14 @@ hr {
 .panel {
   margin: 0 auto;
 }
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
 
 
 
@@ -274,6 +286,18 @@ hr {
     transform: translate(-50%, -50%);
   }
 
+  pre {
+    font-size: 10px !important;
+    margin-top: -10px !important;
+  }
+
+  table {
+    width: 268px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
 }
 
 /* Tablet */
@@ -299,6 +323,13 @@ hr {
   h2 {
     padding-bottom: 25px;
   }
+
+  pre {
+    font-size: 10px !important;
+    margin-top: -10px !important;
+  }
+
+
 
 }
 
@@ -330,6 +361,18 @@ hr {
 
   h2 {
     padding-bottom: 25px;
+  }
+
+  table {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  pre {
+    font-size: 10px !important;
+    margin-top: -10px !important;
   }
 
 }
